@@ -191,26 +191,11 @@
   .min-h-screen {
     min-height: 100vh;
   }
-  .w-\[100px\] {
-    width: 100px;
-  }
-  .w-\[150px\] {
-    width: 150px;
-  }
   .w-\[180px\] {
     width: 180px;
   }
-  .w-\[200px\] {
-    width: 200px;
-  }
-  .w-\[250px\] {
-    width: 250px;
-  }
   .w-full {
     width: 100%;
-  }
-  .max-w-\[300px\] {
-    max-width: 300px;
   }
   .max-w-\[400px\] {
     max-width: 400px;
@@ -239,9 +224,6 @@
       margin-block-start: calc(calc(var(--spacing) * 24) * var(--tw-space-y-reverse));
       margin-block-end: calc(calc(var(--spacing) * 24) * calc(1 - var(--tw-space-y-reverse)));
     }
-  }
-  .bg-white {
-    background-color: var(--color-white);
   }
   .bg-\[url\(\'\.\.\/public\/clinic-potrait\.jpg\'\)\] {
     background-image: url('../public/clinic-potrait.jpg');
@@ -274,10 +256,6 @@
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
-  .text-3xl {
-    font-size: var(--text-3xl);
-    line-height: var(--tw-leading, var(--text-3xl--line-height));
-  }
   .text-lg {
     font-size: var(--text-lg);
     line-height: var(--tw-leading, var(--text-lg--line-height));
@@ -286,27 +264,14 @@
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
   }
-  .font-bold {
-    --tw-font-weight: var(--font-weight-bold);
-    font-weight: var(--font-weight-bold);
-  }
   .text-\[\#0DB9B1\] {
     color: #0DB9B1;
-  }
-  .text-\[\#\] {
-    color: #;
   }
   .text-gray-200 {
     color: var(--color-gray-200);
   }
-  .text-red-300 {
-    color: var(--color-red-300);
-  }
   .text-white {
     color: var(--color-white);
-  }
-  .underline {
-    text-decoration-line: underline;
   }
   .after\:absolute {
     &::after {
@@ -332,52 +297,16 @@
       height: 100%;
     }
   }
-  .after\:min-h-screen {
-    &::after {
-      content: var(--tw-content);
-      min-height: 100vh;
-    }
-  }
   .after\:w-full {
     &::after {
       content: var(--tw-content);
       width: 100%;
     }
   }
-  .after\:bg-black {
-    &::after {
-      content: var(--tw-content);
-      background-color: var(--color-black);
-    }
-  }
-  .after\:bg-gray-400 {
-    &::after {
-      content: var(--tw-content);
-      background-color: var(--color-gray-400);
-    }
-  }
-  .after\:bg-gray-600 {
-    &::after {
-      content: var(--tw-content);
-      background-color: var(--color-gray-600);
-    }
-  }
   .after\:bg-gray-800 {
     &::after {
       content: var(--tw-content);
       background-color: var(--color-gray-800);
-    }
-  }
-  .after\:bg-white {
-    &::after {
-      content: var(--tw-content);
-      background-color: var(--color-white);
-    }
-  }
-  .after\:to-50\% {
-    &::after {
-      content: var(--tw-content);
-      --tw-gradient-to-position: 50%;
     }
   }
   .after\:opacity-50 {
@@ -391,19 +320,9 @@
       width: 250px;
     }
   }
-  .sm\:grid-cols-2 {
-    @media (width >= 40rem) {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
   .sm\:bg-\[url\(\'\.\.\/public\/clinic-landscape\.jpg\'\)\] {
     @media (width >= 40rem) {
       background-image: url('../public/clinic-landscape.jpg');
-    }
-  }
-  .sm\:bg-\[url\(\)\] {
-    @media (width >= 40rem) {
-      background-image: url();
     }
   }
   .sm\:py-\[50px\] {
@@ -428,11 +347,6 @@
       max-width: 600px;
     }
   }
-  .lg\:p-32 {
-    @media (width >= 64rem) {
-      padding: calc(var(--spacing) * 32);
-    }
-  }
   .lg\:px-\[100px\] {
     @media (width >= 64rem) {
       padding-inline: 100px;
@@ -444,72 +358,16 @@
   inherits: false;
   initial-value: 0;
 }
-@property --tw-font-weight {
-  syntax: "*";
-  inherits: false;
-}
 @property --tw-content {
   syntax: "*";
   initial-value: "";
   inherits: false;
 }
-@property --tw-gradient-position {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-gradient-from {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: #0000;
-}
-@property --tw-gradient-via {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: #0000;
-}
-@property --tw-gradient-to {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: #0000;
-}
-@property --tw-gradient-stops {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-gradient-via-stops {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-gradient-from-position {
-  syntax: "<length-percentage>";
-  inherits: false;
-  initial-value: 0%;
-}
-@property --tw-gradient-via-position {
-  syntax: "<length-percentage>";
-  inherits: false;
-  initial-value: 50%;
-}
-@property --tw-gradient-to-position {
-  syntax: "<length-percentage>";
-  inherits: false;
-  initial-value: 100%;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-space-y-reverse: 0;
-      --tw-font-weight: initial;
       --tw-content: "";
-      --tw-gradient-position: initial;
-      --tw-gradient-from: #0000;
-      --tw-gradient-via: #0000;
-      --tw-gradient-to: #0000;
-      --tw-gradient-stops: initial;
-      --tw-gradient-via-stops: initial;
-      --tw-gradient-from-position: 0%;
-      --tw-gradient-via-position: 50%;
-      --tw-gradient-to-position: 100%;
     }
   }
 }
